@@ -39,13 +39,11 @@ namespace M5_SALES.Infrastructure.Repositories
             return customer;
         }
 
-
         public async Task InsertCustomer(Customer customer)
         {
             _context.Customer.Add(customer);
             await _context.SaveChangesAsync();
         }
-
 
         public async Task<bool> UpdateCustomer(Customer customer)
         {

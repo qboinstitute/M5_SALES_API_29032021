@@ -18,6 +18,8 @@ namespace M5_SALES.Infrastructure.Mappings
             CreateMap<CustomerDTO, Customer>();
             CreateMap<Customer, CustomerCityDTO>();
             CreateMap<CustomerCityDTO, Customer>();
+            CreateMap<Customer, CustomerPostDTO>();
+            CreateMap<CustomerPostDTO, Customer>();
         }
 
 
