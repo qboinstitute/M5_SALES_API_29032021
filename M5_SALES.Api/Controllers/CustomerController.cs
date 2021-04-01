@@ -58,7 +58,9 @@ namespace M5_SALES.Api.Controllers
             return Ok(customerDTO);
         }
 
-        [HttpGet("CustomerByNameAndTel/{name}/{tel}")]
+        //[HttpGet("CustomerByNameAndTel/{name}/{tel}")]
+        [HttpGet]
+        [Route("CustomerByNameAndTel/{name}/{tel}")]
         public async Task<IActionResult> CustomerByNameAndTel(string name, string tel)
         {
             int id = 1;
