@@ -4,6 +4,7 @@ using M5_SALES.Core.Entities;
 using M5_SALES.Core.Exceptions;
 using M5_SALES.Core.Interfaces;
 using M5_SALES.Infrastructure.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -13,6 +14,7 @@ using System.Threading.Tasks;
 
 namespace M5_SALES.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CustomerController : ControllerBase

@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace M5_SALES.Core.Entities
+namespace M5_SALES.Core.DTOs
 {
-    public partial class Users
+    public class UsersDTO
     {
         public int Id { get; set; }
         public string Username { get; set; }
-
         public string Password { get; set; }
-
         public string FullName { get; set; }
-        public string Role { get; set; }
-        public bool Status { get; set; }
+        public string Role { get; set; }        
+
     }
 }
